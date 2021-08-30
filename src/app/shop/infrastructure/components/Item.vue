@@ -1,18 +1,36 @@
 <template>
-    <div>
-        <p>this is the item {{name}}</p>
-    </div>
+	<div>
+		<div>
+			<b-card
+			:title="'Item: ' + name"
+			img-src="https://picsum.photos/600/300/?image=25"
+			img-alt="Image"
+			img-top
+			tag="article"
+			style="max-width: 20rem"
+			class="mb-2"
+			>
+			<b-card-text>
+				Some quick example text to build on the card title and make up the
+				bulk of the card's content.
+			</b-card-text>
+
+			<b-button href="#" variant="primary">Go somewhere</b-button>
+			</b-card>
+   	</div>
+  	</div>
 </template>
 
 <script>
 export default {
-  name: "Item",
-  props: {
-    name: String,
-  },
+	name: "Item",
+	props: {
+   	name: String,
+		description: String,
+		price: Number,
+	},
 };
 </script>
 
 <style lang="scss" scoped>
-
 </style>
