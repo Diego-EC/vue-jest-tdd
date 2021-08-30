@@ -1,4 +1,4 @@
-# vue-test
+# vue-jest-tdd
 
 ## Memoria
 ### Creación proyecto
