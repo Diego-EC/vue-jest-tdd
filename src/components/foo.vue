@@ -11,13 +11,12 @@ export default {
   props: {
     msg: String,
   },
-methods: {
+  methods: {
     lol() {
-      console.log('lol');
-    }
-  }
+      console.log("lol");
+    },
+  },
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
