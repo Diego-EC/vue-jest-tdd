@@ -6,7 +6,7 @@
                     <p class="text-left item__card-price">{{ price }} €</p>
                 </b-col>
                 <b-col class="item__card-col" cols="2">
-                    <b-button class="item__button" size="xs" href="#" variant="outline-light" >
+                    <b-button class="item__button" size="xs" variant="outline-light" v-on:click="like">
                         <b-icon icon="BIconHeart" variant="secondary"></b-icon>
                     </b-button>
                 </b-col>
@@ -30,6 +30,11 @@ export default {
     components: {
 
     },
+    methods: {
+        like() {
+            console.log('like');
+        }
+    }
 };
 </script>
 
