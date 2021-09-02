@@ -1,0 +1,32 @@
+/*
+- Clases para la estructura de la página, normalmente siguiendo la metodología OOCSS
+- I’m a fan of object-oriented CSS, though I suppose you could remove this layer if you don’t use it. 
+  This layer is mostly layout-driven, and doesn’t include anything cosmetic. 
+  I included structural objects such as `.inner` and `.container` here, as well as some oft-repeated constructs such as `.post`s and `.hero`.
+*/
+
+@media only screen and (max-width: 600px) {
+    .dynamic-size{
+        height:16rem;
+    } 
+}
+@media only screen and (min-width: 600px) {
+    .dynamic-size{
+        height:22rem;
+    } 
+} 
+@media only screen and (min-width: 768px) {
+    .dynamic-size{
+        height:22rem;
+    } 
+} 
+@media only screen and (min-width: 992px) {
+    .dynamic-size{
+        height:22rem;
+    } 
+} 
+@media only screen and (min-width: 1200px) {
+    .dynamic-size{
+        height:24rem;
+    } 
+}
