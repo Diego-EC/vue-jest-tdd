@@ -1,7 +1,8 @@
 <template>
+<!-- TODO: esta card tiene que ser plantilla tanto para Item Card como para Advertising Card -->
 <div class="">
 	<b-card class="my-2 standard-card dynamic-size" img-src="https://placekitten.com/480/480" img-alt="Image" img-top>
-        <b-row cols="2">
+        <!--<b-row cols="2">
             <b-col class="standard-card-col" cols="10">
                 <p class="text-left standard-card-price">{{ price }} €</p>
             </b-col>
@@ -10,9 +11,9 @@
                     <b-icon icon="BIconHeart" variant="secondary"></b-icon>
                 </b-button>
             </b-col>
-        </b-row>
+        </b-row>-->
         <b-card-text class="standard-card-name mt-2">
-            {{ name }}
+            advertising card
         </b-card-text>
 	</b-card>
 </div>
@@ -20,7 +21,7 @@
 
 <script>
 export default {
-    name: "Item",
+    name: "Card",
     props: {
         name: String,
         description: String,
