@@ -3,7 +3,7 @@
 	<b-card class="my-2 standard-card dynamic-size" img-src="https://placekitten.com/480/480" img-alt="Image" img-top>
         <b-row cols="2">
             <b-col class="standard-card-col" cols="10">
-                <p class="text-left standard-card-price">{{ price }} €</p>
+                <p class="text-left standard-card-price">{{ item.price }} €</p>
             </b-col>
             <b-col class="standard-card-col" cols="2">
                 <b-button class="item__button standard-card-button" size="xs" variant="outline-light" v-on:click="like">
@@ -12,7 +12,7 @@
             </b-col>
         </b-row>
         <b-card-text class="standard-card-name mt-2">
-            {{ name }}
+            {{ item.name }}
         </b-card-text>
 	</b-card>
 </div>
@@ -22,6 +22,7 @@
 export default {
     name: "Item",
     props: {
+        item: Object,
         name: String,
         description: String,
         price: Number,
