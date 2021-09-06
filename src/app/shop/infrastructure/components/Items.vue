@@ -2,7 +2,7 @@
 	<div>
         <b-container class="">
             <b-row class="mr-1" cols="2" cols-sm="2" cols-md="3" cols-lg="4">
-                <div v-for="(item, index) in $store.getters.items" :key="index"><Item :name=item.name :description=item.description :price=item.price /></div>
+                <div v-for="(item, index) in $store.getters.items" :key="index"><Item :item=item /></div>
             </b-row>
         </b-container>
 	</div>
