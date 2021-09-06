@@ -23,9 +23,6 @@ export default {
     name: "Item",
     props: {
         item: Object,
-        name: String,
-        description: String,
-        price: Number,
     },
     components: {
     },
