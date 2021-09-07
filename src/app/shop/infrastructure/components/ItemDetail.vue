@@ -2,8 +2,7 @@
     <div>
         <b-card>
             <h1>Item Detail</h1>
-            <h3>foo</h3>
-
+            <article>{{id}}</article>
         </b-card>
     </div>
 </template>
@@ -12,20 +11,15 @@
 export default {
     name: "ItemDetail",
     props: {
-        item: Object,
-        //id: props.route.params.id,
     },
     created() {
-        //this.gig = await this.retrieveAGig(this.jotaRouter.getParam('id'))
-        console.log('created')
-        //const id = this.$router.params.id;
-        //console.log(this.$router.getParam('id'));
-        console.log(this.$router.params.id);
-        //console.log(id)
+        console.log('created ' + this.id)
+        // TODO: get item by id: https://youtu.be/KGFcgnCSS6A?t=338
+        // this.item = lo que nos devuelva el paso anterior
     },
     data() {
         return {
-            id: this.$router.params.id,
+            id: this.$route.params.id,
             item: {},
         }
     }
