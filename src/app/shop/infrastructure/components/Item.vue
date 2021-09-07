@@ -33,7 +33,7 @@ export default {
         },
         itemDetail() {
             console.log('itemDetail');
-            this.$router.push('item-detail/' + this.item.name);
+            this.$router.push('item-detail/' + this.item.id);
         },
     },
 };

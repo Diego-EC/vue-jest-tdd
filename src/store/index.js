@@ -6,9 +6,9 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         items: [
-            { name: 'foo', description: 'bar', price: 33 },
-            { name: 'mario', description: 'bros', price: 34 },
-            { name: 'luigi', description: 'bros', price: 35 },
+            { id: 0, name: 'foo', description: 'bar', price: 33 },
+            { id: 1, name: 'mario', description: 'bros', price: 34 },
+            { id: 2, name: 'luigi', description: 'bros', price: 35 },
         ],
     },
     mutations: {},
