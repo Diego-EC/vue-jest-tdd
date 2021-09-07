@@ -1,7 +1,7 @@
 import Item from "@/app/shop/infrastructure/components/Item.vue";
 import { mount, shallowMount } from '@vue/test-utils';
 
-describe('Item', () => {
+test('Item', () => {
     it('Renders Item content', () => {
         const ITEM_DATA = { name: 'foo', price: 33 };
         const wrapper = mount(Item, {propsData: {item: ITEM_DATA}})

@@ -8,27 +8,35 @@
 .standard-card {
     box-shadow:0.2rem 0.2rem 0.5rem $color-primary-shadow;  
     margin-left: 1rem;
+    &-row {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-top: 0.5rem;
+    }
     &-name {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
     }
     &-col {
-        padding: 0;    
+        text-align: left;
     }
     &-price {
         max-lines: 1;
         word-wrap: normal;
         font-weight: bold;
-        margin: 0 0 0 0.3rem;
+        
     }
     &-button {
-        padding: 0;
         background-color: $color-primary-background;
         border-color: $color-primary-border;
         &:active {
             background-color: $color-primary-background !important;
             border-color: $color-primary-border !important;
         }
+        padding: 0rem;
+        text-align: right;
     }
 }
