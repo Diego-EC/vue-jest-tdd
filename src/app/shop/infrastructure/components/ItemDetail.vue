@@ -2,7 +2,10 @@
     <div>
         <b-card>
             <h1>Item Detail</h1>
-            <article>{{id}}</article>
+            <article>{{item.name}}</article>
+            <p>description: {{item.description}}</p>
+            <p>id: {{item.id}}</p>
+            <p>price: {{item.price}} €</p>
         </b-card>
     </div>
 </template>
@@ -13,9 +16,8 @@ export default {
     props: {
     },
     created() {
-        console.log('created ' + this.id)
-        // TODO: get item by id: https://youtu.be/KGFcgnCSS6A?t=338
-        // this.item = lo que nos devuelva el paso anterior
+        let item = this.$store.getters.itemById(this.id);
+        this.item = item;
     },
     data() {
         return {
