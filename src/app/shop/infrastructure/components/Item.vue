@@ -32,7 +32,6 @@ export default {
             console.log('like');
         },
         itemDetail() {
-            console.log('itemDetail');
             this.$router.push('item-detail/' + this.item.id);
         },
     },

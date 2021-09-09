@@ -2,7 +2,11 @@
 - These are preprocessor variables for later use.
 - Variables y métodos de preprocesadores
 */
-/* ===== PALETTE ===== */
-$color-primary-background: alpha($color: #000000);
-$color-primary-border: white;
-$color-primary-shadow: lightgrey;
+
+/* PALETTE */
+$color-background-primary: alpha($color: #000000);
+$color-border-primary: white;
+$color-shadow-primary: lightgrey;
+
+/* PIXEL SIZES */
+$item-detail__image--max-width: 480px;

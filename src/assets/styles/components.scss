@@ -6,7 +6,7 @@
 @import "src/assets/styles/settings";
 
 .standard-card {
-    box-shadow:0.2rem 0.2rem 0.5rem $color-primary-shadow;  
+    box-shadow:0.2rem 0.2rem 0.5rem $color-shadow-primary;  
     margin-left: 1rem;
     &-row {
         margin-left: 0rem;
@@ -30,11 +30,11 @@
         
     }
     &-button {
-        background-color: $color-primary-background;
-        border-color: $color-primary-border;
+        background-color: $color-background-primary;
+        border-color: $color-border-primary;
         &:active {
-            background-color: $color-primary-background !important;
-            border-color: $color-primary-border !important;
+            background-color: $color-background-primary !important;
+            border-color: $color-border-primary !important;
         }
         padding: 0rem;
         text-align: right;
